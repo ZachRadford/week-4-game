@@ -24,6 +24,7 @@ setupGame();
     fuck = $(".crystal-image")
     addclick();
     $("#playAgain").css("display", "none")
+    $("#outcome, #score").empty();
   }
 
 
@@ -66,17 +67,17 @@ function numOptions(){
 
       counter += crystalValue;
 
-      console.log("New score: " + counter);
+      $('#score').text("New score: " + counter);
 
       if (counter === target) {
-        console.log("You win! Go f*ck yourself.");
+        $('#outcome').text("You win! Go f*ck yourself.");
         playAgain();
         return;
         
       }
 
       else if (counter >= target) {
-        console.log("You lose, nobody likes you, you will have low resale value on your home, low tire pressure, and cluttered drawers.")        
+        $('#outcome').text("You lose, nobody likes you, you will have low resale value on your home, low tire pressure, and cluttered drawers.")        
         playAgain();
         return;
       }
