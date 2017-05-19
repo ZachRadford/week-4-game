@@ -37,21 +37,11 @@ function numOptions(){
 
 
  function imgDraw(){
-    for (var i = 0; i < numberOptions.length; i++) {
-
-   
+    for (var i = 0; i < numberOptions.length; i++) {   
       var imageCrystal = $("<img>");
-
-
-      imageCrystal.addClass("crystal-image");
-
-      
-      imageCrystal.attr("src", "assets/images/3O8AMde.jpg");
-
-     
-      imageCrystal.attr("data-crystalvalue", numberOptions[i]);
-
-    
+      imageCrystal.addClass("crystal-image");      
+      imageCrystal.attr("src", "assets/images/3O8AMde.jpg");     
+      imageCrystal.attr("data-crystalvalue", numberOptions[i]);    
       $("#crystals").append(imageCrystal);
     }
   }
