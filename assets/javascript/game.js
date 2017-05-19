@@ -7,7 +7,7 @@
 
   var numberOptions
 
-  var fuck
+  var img1
 
   $("#playAgain").on("click", function(){
     setupGame();
@@ -21,7 +21,7 @@ setupGame();
     counter = 0;
     numOptions();
     imgDraw();
-    fuck = $(".crystal-image")
+    img1 = $(".crystal-image")
     addclick();
     $("#playAgain").css("display", "none")
     $("#outcome, #score").empty();
@@ -59,7 +59,7 @@ function numOptions(){
 
   function addclick(){
 
-      fuck.on("click", function() {
+      img1.on("click", function() {
 
       
       var crystalValue = ($(this).attr("data-crystalvalue"));
