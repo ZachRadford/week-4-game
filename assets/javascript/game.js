@@ -70,7 +70,7 @@ function numOptions(){
       $('#score').text("New score: " + counter);
 
       if (counter === target) {
-        $('#outcome').text("You win! Go f*ck yourself.");
+        $('#outcome').text("You win!");
         playAgain();
         return;
         
