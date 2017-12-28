@@ -67,7 +67,7 @@ function numOptions(){
       }
 
       else if (counter >= target) {
-        $('#outcome').text("You lose, nobody likes you, you will have low resale value on your home, low tire pressure, and cluttered drawers.")        
+        $('#outcome').text("You lose. You will have low resale value on your home, low tire pressure, and cluttered drawers.")        
         playAgain();
         return;
       }
